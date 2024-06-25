@@ -5,7 +5,7 @@ from Item1_Algoritmo import diferencias_finita
 
 # DEFINICIÓN DE CONDICIONES INICIALES
 '''
-- Condición inicial para el metodo:
+- Condición inicial f(x) para el metodo:
 u(x,0) = f(x)
 
 - En el problema se define:
@@ -18,9 +18,7 @@ u(x,0) = f(x) = sin(pi*x)
 def f(x): return np.sin((np.pi)*x)
 
 '''
-# Definición de las funciones f y g para el problema #
-
-- Condición inicial para el metodo:
+- Condición inicial g(x) para el metodo:
 ∂u/∂t(x,0) = g(x)
 
 - En el problema se define:
