@@ -26,7 +26,7 @@ def diferencias_finita(l, t, a, m=2, n=2, f=lambda:None, g=lambda:None):
         for i in range(1, m):
             w[i, j+1] = 2*(1-(y**2))*w[i, j] + (y**2)*(w[i+1, j] + w[i-1, j]) - w[i, j-1]
 
-    resultados = [] # Salida (x, t, w)
+    resultados = [] # Salida (x, t, w) para cada i, j.
     # Paso 6
     for j in range(n+1):
         t = j*k

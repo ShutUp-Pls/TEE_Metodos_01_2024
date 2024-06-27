@@ -56,7 +56,7 @@ alpha² = 4 | alpha = ±2
 
 alpha = 2
 
-# Parametros dados por la actividad 3 (Variar para )
+# Parametros dados por la actividad 3 (Variar para comprobar cambios)
 M = 10
 N = 10
 
@@ -69,6 +69,7 @@ resultados = diferencias_finita(L, T, alpha, M, N, f, g)
 if True:
     with open('resultados.csv', 'w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["x", "y", "z"])
+        # t y w representan coordenada y, coordenada z respectivamente.
+        writer.writerow(["x", "t", "w"])
         for res in resultados:
             writer.writerow([res[0], res[1], res[2]])
