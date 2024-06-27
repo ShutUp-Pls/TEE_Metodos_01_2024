@@ -1,6 +1,7 @@
 import numpy as np
 
-def diferencias_finita(l, t, a, m=2, n=2, f=lambda:None, g=lambda:None):
+def diferencias_finita(l, t, a, m, n, f=lambda:None, g=lambda:None):
+    if n < 2 or m < 2: return print("ERROR: n < 2 or m < 2")
     # Paso 1
     h = l/m
     k = t/n
