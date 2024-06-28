@@ -1,7 +1,7 @@
 import csv # Para exportar los resultados a un archivo CSV para facilitar trabajo con geogebra
 import numpy as np
 
-from Item1_Algoritmo import diferencias_finita
+from Item1_Algoritmo_Python import diferencias_finita
 
 # DEFINICIÓN DE CONDICIONES INICIALES
 '''
