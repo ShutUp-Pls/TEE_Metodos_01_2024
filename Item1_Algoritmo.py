@@ -33,7 +33,7 @@ def diferencias_finita(l, t, a, m, n, f=lambda:None, g=lambda:None):
         t = j*k
         for i in range(m+1):
             x = i*h
-            resultados.append((x, t, w[i, j]))
+            resultados.append((x, t, w[i, j], i, j))
 
     # Paso 7
     return resultados

@@ -63,10 +63,15 @@ N = 10
 # Cálculo de las aproximaciones
 resultados = diferencias_finita(L, T, alpha, M, N, f, g)
 
+# Imprime los puntos (x, t, w) para cada i, j
+if True:
+    for res in resultados:
+        print(f"(i={res[3]}, j={res[4]}) (x={res[0]:.2f}, t={res[1]:.2f}, w={res[2]:.2f})")
+
 # Guardar para exportar los resultados como .csv
 # Usar .csv facilita su incersión a softwares de graficos
 # GeoGebra en su versión classic permite la inserción de tablas
-if True:
+if False:
     with open('resultados.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         # t y w representan coordenada y, coordenada z respectivamente.
